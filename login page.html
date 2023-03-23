@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Login Page</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script>
+      function validateForm() {
+        var email = document.forms["loginForm"]["email"].value;
+        var password = document.forms["loginForm"]["password"].value;
+        if (email === "admin@admin.com" && password === "123456") {
+          alert("Login successful");
+        } else {
+          alert("Incorrect email or password");
+        }
+        return false;
+      }
+    </script>
+    <style>
+        h2{
+            text-align: center;
+      padding-top: 20px;
+      padding-bottom: 20px;   
+        }
+
+        .btn{
+  text-align: center;
+ margin-top: 20px;
+  padding-right: 510px;
+  padding-left: 510px;
+  margin-left: 25px;
+        }
+
+        footer {
+    background-color: black;
+    max-width: 100%;
+    padding: 20px;
+    margin-top: 60px;
+    justify-content: space-between;
+ }
+  
+  .row {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  
+  .col {
+    flex-basis: 25%;
+  }
+  
+  h4 {
+    font-size: 1.0rem;
+    margin-bottom: 10px;
+    text-align: center;
+    color: #fff;;
+  }
+  
+  ul {
+    list-style: none;
+    padding: 10px;
+    margin: 0; 
+  }
+  
+  li {
+    margin-bottom: 5px;
+    text-align: center;
+    color: #fff;;
+  }
+  
+  a {
+    color: #666;
+    text-decoration: none;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+    color: #6e6e6e;;
+
+  }
+  
+  hr {
+    border: none;
+    border-top: 1px solid #ccc;
+    margin: 20px 0;
+  }
+  
+  p {
+    text-align: center;
+    font-size: 0.9rem;
+    
+    margin-top: 20px;
+    color: #fff;;
+  }
+
+  @media only screen and (max-width:800px){
+  .btn{
+    text-align: center;
+    margin-right: 20px;
+    margin-left: 20px;
+    padding-left: 150px;
+    padding-right: 150px;
+  }
+
+  .col {
+    flex-basis: 100%;
+  }
+}
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h2>LOGIN</h2>
+      <form name="loginForm" onsubmit="return validateForm()">
+        <div class="form-group">
+          <label for="email">Email:</label>
+          <input type="email" class="form-control" id="email" placeholder="Enter email" name="email" required>
+        </div>
+        <div class="form-group">
+          <label for="password">Password:</label>
+          <input type="password" class="form-control" id="password" placeholder="Enter password" name="password" required>
+        </div>
+        <button type="submit" class="btn btn-primary">Login</button>
+      </form>
+    </div>
+
+<footer>
+    <div class="row">
+      <div class="col">
+        <h4>Women</h4>
+        <ul>
+          <li>Dresses</a></li>
+          <li>pants</a></li>
+          <li>shirts</a></li>
+          
+        </ul>
+      </div>
+      <div class="col">
+        <h4>Men</h4>
+        <ul>
+          <li>Shirts</a></li>
+          <li>pants</a></li>
+          <li>T-shirts</a></li>
+        </ul>
+      </div>
+      <div class="col">
+        <h4>Kids</h4>
+        <ul>
+        </ul>
+      </div>
+      <div class="col">
+        <h4>Links</h4>
+        <ul>
+          <li>Home</a></li>
+          <li>Contact</a></li>
+          <li>Login</a></li>
+        </ul>
+      </div>
+    </div>
+    <hr>
+    <p>&copy; 2023 My Website. All rights reserved.</p>
+  </footer>
+
+  </body>
+</html>
+</body>
+</html>

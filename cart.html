@@ -1,0 +1,210 @@
+<DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Login Page</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <script>
+        let count = 0;
+        function incrementCount() {
+        count = addTwoNumbers(count, 1);
+        displayUpdatedCount(count)
+        }
+        function addTwoNumbers(num1, num2) {
+        let ans = num1 + num2;
+        return ans
+        }
+        function decrementCount() {
+            count = count-1;
+displayUpdatedCount(count)
+}
+function displayUpdatedCount(number) {
+document.getElementById("counter-text").innerText = number;
+}
+</script>
+
+<style>
+    h5{
+      padding-left: 30px;
+      padding-right: 30px;
+      
+    }
+    .card-header{
+    text-align: center;
+    
+  }
+
+  h6{
+    margin-top: 30px;
+  }
+
+  footer {
+    background-color: black;
+    max-width: 100%;
+    padding: 20px;
+    margin-top: 100px;
+    justify-content: space-between;
+ }
+  
+  .row {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  
+  .col {
+    flex-basis: 25%;
+  }
+  
+  h4 {
+    font-size: 1.0rem;
+    margin-bottom: 10px;
+    text-align: center;
+    color: #fff;;
+  }
+  
+  ul {
+    list-style: none;
+    padding: 10px;
+    margin: 0; 
+  }
+  
+  li {
+    margin-bottom: 5px;
+    text-align: center;
+    color: #fff;;
+  }
+  
+  a {
+    color: #666;
+    text-decoration: none;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+    color: #6e6e6e;;
+
+  }
+  
+  hr {
+    border: none;
+    border-top: 1px solid #ccc;
+    margin: 20px 0;
+  }
+  
+  p {
+    text-align: center;
+    font-size: 0.9rem;
+    
+    margin-top: 20px;
+    color: #fff;;
+  }
+
+  @media only screen and (max-width:800px){
+
+  .col {
+    flex-basis: 100%;
+  }
+}
+
+    </style>
+    
+  </head>
+  <body>
+    <div class="card-header">
+        Items in cart
+      </div>
+    <div class="container mt-4" style="max-width: 1080px" style="max-height: 500px";>
+       
+        <div class="row">
+          <div class="col-md-8">
+           
+            
+            <div class="row mb-3">
+              <div class="col-md-4">
+                <img src="final project images/women pink dress.jpg" class="img-fluid rounded-start" alt="...">
+              </div>
+              <div class="col-md-4">
+                <h6>Women pink dress</h6>
+                
+                <h6>100$</h6>
+                <a href=""></a><img src="final project images/cart icon.png"></a>
+                
+              </div>
+              <div class="col-md-4">
+                <div class="input-group">
+                  <div class="input-group-prepend">
+                    <button class="btn btn-outline-secondary" type="button" name="incrementBtn" onclick="incrementCount()">+</button><br>
+                  </div>
+                  <h5 id="counter-text"> <input type="text" class="form-control" value="1"></h5>
+                  <div class="input-group-append">
+                    <button class="btn btn-outline-secondary" type="button" name="decrementBtn" onclick="decrementCount()">-</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+           
+          </div>
+          <div class="col-md-4">
+            <div class="card">
+              <div class="card-header">
+                Summary
+              </div>
+              <div class="card-body">
+                <strong>Product Price: <span class="float-right">$100</span></strong><br>
+                <strong>Shipping: <span class="float-right">$10</span></strong><br>
+                <hr>
+                <strong>Total: <span class="float-right">$110</span></strong><br>
+                <button class="btn btn-primary btn-block">Checkout</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <footer>
+        <div class="row">
+          <div class="col">
+            <h4>Women</h4>
+            <ul>
+              <li>Dresses</a></li>
+              <li>pants</a></li>
+              <li>shirts</a></li>
+              
+            </ul>
+          </div>
+          <div class="col">
+            <h4>Men</h4>
+            <ul>
+              <li>Shirts</a></li>
+              <li>pants</a></li>
+              <li>T-shirts</a></li>
+            </ul>
+          </div>
+          <div class="col">
+            <h4>Kids</h4>
+            <ul>
+            </ul>
+          </div>
+          <div class="col">
+            <h4>Links</h4>
+            <ul>
+              <li>Home</a></li>
+              <li>Contact</a></li>
+              <li>Login</a></li>
+            </ul>
+          </div>
+        </div>
+        <hr>
+        <p>&copy; 2023 My Website. All rights reserved.</p>
+      </footer>
+
+  </body>
+</html>
+</body>
+</html>
